@@ -1,0 +1,16 @@
+/* Фіксований розмір слайдера */
+#carouselExampleIndicators {
+  max-height: 200px; /* Максимальна висота слайдера */
+  overflow: hidden; /* Щоб приховати зайву частину картинок */
+}
+
+/* Адаптація розміру зображень в слайдері */
+#carouselExampleIndicators img {
+  max-width: 90%; /* Максимальна ширина зображень */
+  height: auto; /* Автоматична висота, щоб зберігати пропорції */
+  object-fit: contain; /* Зберігати пропорції зображень в області */
+}
+footer {
+  text-align: center;
+  background-color: red;
+}

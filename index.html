@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Grid</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <!-- Розміщення вашого header та дворівневого меню -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Ваш логотип</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Меню
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Пункт 1</a>
+              <a class="dropdown-item" href="#">Пункт 2</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Інше меню</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 order-md-1">
+        <!-- LEFT блок -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/audi2.jpg" class="d-block w-100 h-25" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/BMW.jpg" class="d-block w-100 h-25" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/Mercedes.jpg" class="d-block w-100 h-25" alt="Image 3">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/volf.webp" class="d-block w-100 h-25" alt="Image 4">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 order-md-2">
+        <!-- MAIN блок -->
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Секція 1
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Вміст секції 1
+              </div>
+            </div>
+
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  Секція 2
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                Вміст секції 2
+              </div>
+            </div>
+            <!-- Додайте більше секцій, якщо потрібно -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 order-md-3">
+        <!-- RIGHT блок -->
+        <form>
+          <div class="form-group">
+            <label for="field1">Поле 1</label>
+            <input type="text" class="form-control" id="field1" name="field1">
+          </div>
+          <div class="form-group">
+            <label for="field2">Поле 2</label>
+            <input type="text" class="form-control" id="field2" name="field2">
+          </div>
+          <!-- Додайте більше полів, якщо потрібно -->
+          <button type="submit" class="btn btn-primary">Відправити</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>footer</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
